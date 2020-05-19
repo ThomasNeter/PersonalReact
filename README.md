@@ -1,1 +1,0 @@
-A place to show my job experience, other projects, and maybe tell a little more about myself :)
