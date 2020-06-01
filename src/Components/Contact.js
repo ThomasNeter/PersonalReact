@@ -34,7 +34,7 @@ const Contact = data => {
          formData
       )
          .then(res => {
-            db.collection('Users').add({
+            db.collection('emails').add({
                name: formData.name,
                email: formData.email,
                subject: formData.subject,
@@ -63,20 +63,20 @@ const Contact = data => {
                <form onSubmit={handleSubmit} id="contactForm" name="contactForm">
                   <fieldset>
                      <div>
-                        <label htmlFor="contactName">Name <span className="required">*</span></label>
-                        <input type="text" size="35" id="contactName" name="name" onChange={updateInput} value={formData.name || ''} />
+                        <label htmlFor="name">Name <span className="required">*</span></label>
+                        <input type="text" size="35" id="name" name="name" onChange={updateInput} value={formData.name || ''} />
                      </div>
                      <div>
-                        <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                        <input type="text" size="35" id="contactEmail" name="email" onChange={updateInput} value={formData.email || ''} />
+                        <label htmlFor="email">Email <span className="required">*</span></label>
+                        <input type="text" size="35" id="email" name="email" onChange={updateInput} value={formData.email || ''} />
                      </div>
                      <div>
-                        <label htmlFor="contactSubject">Subject</label>
-                        <input type="text" size="35" id="contactSubject" name="subject" onChange={updateInput} value={formData.subject || ''} />
+                        <label htmlFor="subject">Subject</label>
+                        <input type="text" size="35" id="subject" name="subject" onChange={updateInput} value={formData.subject || ''} />
                      </div>
                      <div>
-                        <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                        <textarea cols="50" rows="15" id="contactMessage" name="message" onChange={updateInput} value={formData.message || ''}></textarea>
+                        <label htmlFor="message">Message <span className="required">*</span></label>
+                        <textarea cols="50" rows="15" id="message" name="message" onChange={updateInput} value={formData.message || ''}></textarea>
                      </div>
                      <div>
                         <button type="submit" className="submit">Submit</button>

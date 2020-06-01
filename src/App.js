@@ -43,7 +43,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header data={this.state.resumeData.main}/>
-        <div>did it deploy</div>
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
         <Contact {...this.state.resumeData.main}/>
