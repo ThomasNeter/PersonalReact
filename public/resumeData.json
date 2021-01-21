@@ -46,10 +46,18 @@
     "work":[
       {
         "company":"Geotab",
+        "title":"Software Developer (Part-Time)",
+        "years":"Jan-Current 2021",
+        "description":["Balancing university studies while developing a React-Redux tool for company-wide metadata management, using Tabulator and Expess for interfacing with Google Big Query"]
+      },
+      {
+        "company":"Geotab",
         "title":"Software Developer",
         "years":"Sept-Dec 2020",
         "description":[
-          "Will update accordingly :)"
+          "Created a React app to visualize the sentiment relationships between 1+ million data points, leveraging tools such as Material UI, Cytoscape, Plotly, Redux, and Docker",
+          "Wrote queries to gather the data from Google Big Query which were produced by natural language processing scripts written in Python ",
+          "Facilitated planning meetings with my manager to outline the product's progress, roadmap, and necessary features"
         ]
       },
       {
