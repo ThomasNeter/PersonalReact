@@ -99,6 +99,29 @@
           "Documented solutions and processes for the knowledge database within ServiceNow, authoring 47 new articles"
         ]
       }
+    ],
+    "projects": [
+      {
+        "project": "BitBeatz",
+        "link": "http://bitbeatz.ca/",
+        "caption": "SYDE 361",
+        "date": "Spring 2020",
+        "description": [
+          "Prototyped a React application with the requirements of providing users: a collaborative experience, network functionality, and genetic algorithm-generated music",
+          "I worked primarily on the Front-End portion, which was initially mocked in Figma and used Material UI",
+          "*Note: the Heroku app may take some time to load*"
+        ]
+      },
+      {
+        "project": "Queery",
+        "link": "https://devpost.com/software/queery",
+        "caption": "HackHarvard",
+        "date": "October 2018",
+        "description": [
+          "Prototyped a forum-style site using technologies such as AWS Cloud 9 and NodeJS, with Facebook Login API for user profiles and sign-in",
+          "Implemented malicious-user filtering using Facebook Graph API along with Microsoft Text Analytics API to screen users’ posts"
+        ]
+      }
     ]
   }
 }
