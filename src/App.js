@@ -1,54 +1,49 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import ReactGA from 'react-ga'
 import $ from 'jquery'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import About from './Components/About'
+import Contact from './Components/Contact'
 import Resume from './Components/Resume'
-// import Contact from './Components/Contact'
+import Portfolio from './Components/Portfolio'
+import resume from './resumeData.json';
 
-class App extends Component {
+function App() {
 
-  constructor(props){
-    super(props);
-    this.state = {
-      resumeData: {}
-    };
+  ReactGA.initialize('UA-110570651-1');
+  ReactGA.pageview(window.location.pathname);
 
-    ReactGA.initialize('UA-110570651-1');
-    ReactGA.pageview(window.location.pathname);
 
-  }
+  // const getResumeData = () => {
+  //   $.ajax({
+  //     url:'/resumeData.json',
+  //     dataType:'json',
+  //     cache: false,
+  //     success: function(data){
+  //       setResumeData({resumeData: data});
+  //     }.bind(this),
+  //     error: function(xhr, status, err){
+  //       console.log(err);
+  //       alert(err);
+  //     }
+  //   });
+  // }
 
-  getResumeData(){
-    $.ajax({
-      url:'/resumeData.json',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
-        alert(err);
-      }
-    });
-  }
+  // useEffect(() => {
+  //   getResumeData();
+  // });
 
-  componentDidMount(){
-    this.getResumeData();
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Footer data={this.state.resumeData.main}/>
-      </div>
-    );
-  }
-}
+  
+  return (
+    <div className="App">
+      <Header data={resume.main}/>
+      {/* <Portfolio title="HI" description="grabba ooooooo" imageSrc="images/profilepic.jpg"/> */}
+      <About data={resume.main}/>
+      <Resume data={resume.resume}/>
+      <Footer data={resume.main}/>
+    </div>
+  );
+};
 
 export default App;

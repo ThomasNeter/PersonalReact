@@ -1,0 +1,96 @@
+{
+  "main": {
+    "name":"Thomas Neter",
+    "occupation":"Fullstack Developer",
+    "education": "Systems Design Engineering at the University of Waterloo",
+    "image":"profilepic.jpg",
+    "bio":"In my free time I enjoy playing soccer, running, hiking, bouldering as well as playing video games; some of my favourites being Uncharted, Skyrim, Smash Bros, and Fifa. I also love travelling and have visited destinations all around the world, including multiple states and provinces in North America, several countries  in Europe, and Japan.",
+    "contactmessage":"I'm currently looking for an internship for September-December 2020! Feel free to send me an email or use my other contact info to get in touch!",
+    "email": "tcneter@uwaterloo.ca",
+    "phone": "705-970-3573",
+    "address":{
+      "street":"209 Erb St W",
+      "city":"Waterloo",
+      "state":"Ontario"
+    },
+    "website": "http://www.thomasneter.me",
+    "resumedownload":"../images/resume.pdf",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/tneter/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"http://instagram.com/thomasneter",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"http://github.com/ThomasNeter",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "education":[
+      {
+        "school":"University of Waterloo",
+        "degree":"Systems Design Engineering",
+        "graduated":"2017-2022",
+        "description":"Our courses reflect a wide range of industries such as comp-sci, product design, and mechanical engineering. It prepares the student for leadership in a complex technological society that requires interdisciplinary thinking capability to meet future needs for complex, balanced decision-making."
+      }
+    ],
+    "work":[
+      {
+        "company":"Geotab",
+        "title":"Software Developer",
+        "years":"Sept-Dec 2020",
+        "description":[
+          "Will update accordingly :)"
+        ]
+      },
+      {
+        "company":"360Insights",
+        "title":"Fullstack Developer",
+        "years":"Jan-Apr 2020",
+        "description":[
+          "Developed a rebate/donation summary component in React for the Utopia rebate service with integrated Atlas API functionality in order to efficiently display rebate details, decreasing call center encumberance",
+          "Implemented data export utility to the Sales Associate portal, enabling streamlined access to program qualification data using React, Express, and Node-Xlsx",
+          "Worked in an Agile team, focused on test-driven development, using Jest, Sinon, Chai, and Enzyme to ensure 100% coverage in all repos"
+        ]
+      },
+      {
+        "company":"Digital Extremes",
+        "title":"Web Developer",
+        "years":"May-Aug 2019",
+        "description":[
+          "Spearheaded the development of the company’s new Larvel-based website, using jQuery, VueJS, Node-Vibrant, and SASS",
+          "Designed a back-end portal using PHP and MongoDB for managing the company’s future news posts and 200+ existing articles",
+          "Created a gameshow application utilizing NodeCG, NodeJS, and Twitch and Mixer APIs for Digital Extremes’ annual TennoCon, viewed by over 50,000 live viewers"
+        ]
+      },
+      {
+        "company":"Economical Insurance",
+        "title":"Technical Analyst",
+        "years":"Sept-Dec 2018",
+        "description":[
+          "Diagnosed, troubleshooted, and resolved problems related to software, hardware, networks, and systems, successfully solving 300+ tickets during the term",
+          "Wrote Batch and VB scripts to automate user installations",
+          "Managed deployment of thousands of computer assets company-wide"
+        ]
+      },
+      {
+        "company":"McKinsey & Company",
+        "title":"GHD Specialist",
+        "years":"Jan-Apr 2018",
+        "description":[
+          "Regulated firm-wide migration of 26,000 colleagues from Domino to Exchange email servers",
+          "Documented solutions and processes for the knowledge database within ServiceNow, authoring 47 new articles"
+        ]
+      }
+    ]
+  }
+}
